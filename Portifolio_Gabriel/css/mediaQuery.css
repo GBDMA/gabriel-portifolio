@@ -1,0 +1,576 @@
+/* Para Tablets*/ 
+@media screen and (min-device-width: 768px)
+and (max-device-width: 1024px) {
+    .img-wrapper img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        opacity: 0.5;
+        animation: zoom 25s;
+    }
+    
+    .baner h1{
+      color: #ffffff;
+      font-size: 1.2em;
+      font-family: "Baloo Da 2", serif;
+      font-weight: 200;
+      text-shadow: .2rem, .2rem 1px rgba(0, 0, 0, .4);
+      line-height: 2rem;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: moveBaner 1s forwards;
+    }
+    
+    .baner p {
+      font-family: "Josefin Slab", serif;
+      color: #fff;
+      font-size: 1em;
+      text-shadow: .2rem, .2rem rgba(0, 0, 0, .4);
+      margin-bottom: 4rem;
+      opacity: 0;
+      animation: moveBaner 1s 0.7s forwards;
+    }
+    
+    .baner button{
+      font-family: "Muli", serif;
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      background: #4b4b4b;
+      background: linear-gradient(
+      90deg,#1c1c1c 20%,
+            #474350 40%,
+            #ffc857 100%);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0;
+      animation: moveBaner 1s 0.9s forwards;
+    }
+    
+    .baner button:hover {
+      opacity: 0.8;
+      color: #000;
+    }
+    
+    .paragrafo {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+    }
+    
+    .text-md {
+      position: relative;
+      font-size: 20px;
+      top: 28px;
+    }
+    
+    .text-titulo {
+      position: relative;
+      top: -8px;
+      z-index: 99;
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+      font-size: 13px;
+      background: linear-gradient(
+        90deg,#1c1c1c 20%,
+              #474350 40%,
+              #ffc857 100%);
+      color: #fff;
+    }
+    
+    .line {
+      width: 100%;
+      height: 2px;
+      background: #17203f;
+    }
+    
+    .down {
+      justify-content: space-between;
+      flex-direction: column;
+      min-height: 600px;
+    }
+    
+    .box {
+      width: 60%;
+    }
+    
+    #projetos .container .card {
+      position: absolute;
+      width: 90%;
+      height: auto;
+      bottom: 100px;
+     }
+    
+     #projetos .container .cards {
+      position: relative;
+      width: 100%;
+      height: 20vh;
+     }
+    
+     #item-1:checked ~ .cards #song-3, 
+     #item-2:checked ~ .cards #song-1,
+     #item-3:checked ~ .cards #song-2 {
+      transform: translateX(0) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+     }
+    
+     #item-1:checked ~ .cards #song-2, 
+     #item-2:checked ~ .cards #song-3,
+     #item-3:checked ~ .cards #song-1 {
+      transform: translateX(25%) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+     }
+    
+     .saiba-mais {
+      position: absolute;
+      top: 60%;
+      right: 38%;
+      padding: 1.5%;
+      background: #1c1c1c;
+      color: #fff;
+      font-size: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+     }
+    
+     #contact .container .left .boxs {
+      width: 100%;
+      height: 60vh;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px #2b2b2b;
+      background: #c3bcb7;
+     }
+    
+     #contact .container .left .boxs .social i {
+      margin-left: 80px;
+      margin-right: 40px;
+      margin-top: 80px;
+      cursor: pointer;
+      transition: 0.3s ease;
+     }
+    
+    
+     footer .container {
+      width: 100%;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background: linear-gradient(
+    90deg,#1c1c1c 20%,
+          #474350 40%,
+          #ffc857 100%);
+     }
+    
+     .text-pq {
+      position: relative;
+      left: 38%;
+      font-size: 80%;
+     }
+    
+     #back-to-top {
+      position: fixed;
+      bottom: 15px;
+      right: 50px;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background: #64615e;
+      cursor: pointer;
+      animation: jumping 1.5s linear infinite;
+    }
+}
+
+/* Para outros dispositivos mobile*/
+@media screen and (max-device-width: 480px)
+and (orientation: portrait) {
+    .img-wrapper img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        opacity: 0.5;
+        animation: zoom 25s;
+    }
+    
+    .baner h1{
+      color: #ffffff;
+      font-size: 1.2em;
+      font-family: "Baloo Da 2", serif;
+      font-weight: 200;
+      text-shadow: .2rem, .2rem 1px rgba(0, 0, 0, .4);
+      line-height: 2rem;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: moveBaner 1s forwards;
+    }
+    
+    .baner p {
+      font-family: "Josefin Slab", serif;
+      color: #fff;
+      font-size: 1em;
+      text-shadow: .2rem, .2rem rgba(0, 0, 0, .4);
+      margin-bottom: 4rem;
+      opacity: 0;
+      animation: moveBaner 1s 0.7s forwards;
+    }
+    
+    .baner button{
+      font-family: "Muli", serif;
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      background: #4b4b4b;
+      background: linear-gradient(
+      90deg,#1c1c1c 20%,
+            #474350 40%,
+            #ffc857 100%);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0;
+      animation: moveBaner 1s 0.9s forwards;
+    }
+    
+    .baner button:hover {
+      opacity: 0.8;
+      color: #000;
+    }
+    
+    .paragrafo {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+    }
+    
+    .text-md {
+      position: relative;
+      font-size: 20px;
+      top: 28px;
+    }
+    
+    .text-titulo {
+      position: relative;
+      top: -8px;
+      z-index: 99;
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+      font-size: 13px;
+      background: linear-gradient(
+        90deg,#1c1c1c 20%,
+              #474350 40%,
+              #ffc857 100%);
+      color: #fff;
+    }
+    
+    .line {
+      width: 100%;
+      height: 2px;
+      background: #17203f;
+    }
+    
+    .down {
+      justify-content: space-between;
+      flex-direction: column;
+      min-height: 600px;
+    }
+    
+    .box {
+      width: 60%;
+    }
+    
+    #projetos .container .card {
+      position: absolute;
+      width: 90%;
+      height: auto;
+      bottom: 100px;
+     }
+    
+     #projetos .container .cards {
+      position: relative;
+      width: 100%;
+      height: 20vh;
+     }
+    
+     #item-1:checked ~ .cards #song-3, 
+     #item-2:checked ~ .cards #song-1,
+     #item-3:checked ~ .cards #song-2 {
+      transform: translateX(0) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+     }
+    
+     #item-1:checked ~ .cards #song-2, 
+     #item-2:checked ~ .cards #song-3,
+     #item-3:checked ~ .cards #song-1 {
+      transform: translateX(25%) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+     }
+    
+     .saiba-mais {
+      position: absolute;
+      top: 60%;
+      right: 38%;
+      padding: 1.5%;
+      background: #1c1c1c;
+      color: #fff;
+      font-size: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+     }
+    
+     #contact .container .left .boxs {
+      width: 100%;
+      height: 75vh;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px #2b2b2b;
+      background: #c3bcb7;
+     }
+    
+     #contact .container .left .boxs .social i {
+      margin-left: 80px;
+      margin-right: 40px;
+      margin-top: 80px;
+      cursor: pointer;
+      transition: 0.3s ease;
+     }
+    
+    
+     footer .container {
+      width: 100%;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background: linear-gradient(
+    90deg,#1c1c1c 20%,
+          #474350 40%,
+          #ffc857 100%);
+     }
+    
+     .text-pq {
+      position: relative;
+      left: 38%;
+      font-size: 80%;
+     }
+    
+     #back-to-top {
+      position: fixed;
+      bottom: 15px;
+      right: 50px;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background: #64615e;
+      cursor: pointer;
+      animation: jumping 1.5s linear infinite;
+    }
+}
+
+/* Para Iphone*/
+@media (min-device-height: 667px) and (min-device-width: 375px)
+and (-webkit-min-device-pixel-ratio: 3) {
+    .img-wrapper img{
+        width: 100%;
+        height: 80vh;
+        object-fit: cover;
+        opacity: 0.5;
+        animation: zoom 25s;
+    }
+    
+    .baner h1{
+      color: #ffffff;
+      font-size: 1.2em;
+      font-family: "Baloo Da 2", serif;
+      font-weight: 200;
+      text-shadow: .2rem, .2rem 1px rgba(0, 0, 0, .4);
+      line-height: 2rem;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: moveBaner 1s forwards;
+    }
+    
+    .baner p {
+      font-family: "Josefin Slab", serif;
+      color: #fff;
+      font-size: 1em;
+      text-shadow: .2rem, .2rem rgba(0, 0, 0, .4);
+      margin-bottom: 4rem;
+      opacity: 0;
+      animation: moveBaner 1s 0.7s forwards;
+    }
+    
+    .baner button{
+      font-family: "Muli", serif;
+      color: #fff;
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: .1rem;
+      background: #4b4b4b;
+      background: linear-gradient(
+      90deg,#1c1c1c 20%,
+            #474350 40%,
+            #ffc857 100%);
+      padding: 0.5rem 1rem;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      opacity: 0;
+      animation: moveBaner 1s 0.9s forwards;
+    }
+    
+    .baner button:hover {
+      opacity: 0.8;
+      color: #000;
+    }
+    
+    .paragrafo {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 2px;
+      word-spacing: 5px;
+    }
+    
+    .text-md {
+      position: relative;
+      font-size: 20px;
+      top: 28px;
+    }
+    
+    .text-titulo {
+      position: relative;
+      top: -8px;
+      z-index: 99;
+      margin: 0 auto;
+      text-align: center;
+      width: 200px;
+      font-size: 13px;
+      background: linear-gradient(
+        90deg,#1c1c1c 20%,
+              #474350 40%,
+              #ffc857 100%);
+      color: #fff;
+    }
+    
+    .line {
+      width: 100%;
+      height: 2px;
+      background: #17203f;
+    }
+    
+    .down {
+      justify-content: space-between;
+      flex-direction: column;
+      min-height: 600px;
+    }
+    
+    .box {
+      width: 60%;
+    }
+    
+    #projetos .container .card {
+      position: absolute;
+      width: 90%;
+      height: auto;
+      bottom: 100px;
+     }
+    
+     #projetos .container .cards {
+      position: relative;
+      width: 80%;
+      height: 20vh;
+     }
+    
+     #item-1:checked ~ .cards #song-3, 
+     #item-2:checked ~ .cards #song-1,
+     #item-3:checked ~ .cards #song-2 {
+      transform: translateX(0) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+     }
+    
+     #item-1:checked ~ .cards #song-2, 
+     #item-2:checked ~ .cards #song-3,
+     #item-3:checked ~ .cards #song-1 {
+      transform: translateX(25%) scale(0.8);
+      opacity: 0.4;
+      z-index: 0;
+     }
+    
+     .saiba-mais {
+      position: absolute;
+      top: 60%;
+      right: 38%;
+      padding: 1.5%;
+      background: #1c1c1c;
+      color: #fff;
+      font-size: 14px;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      transition: 0.2s ease;
+     }
+    
+     #contact .container .left .boxs {
+      width: 100%;
+      height: 60vh;
+      border-radius: 20px;
+      box-shadow: 0 5px 20px #2b2b2b;
+      background: #c3bcb7;
+     }
+    
+     #contact .container .left .boxs .social i {
+      margin-left: 90px;
+      margin-right: 40px;
+      margin-top: 65px;
+      cursor: pointer;
+      transition: 0.3s ease;
+     }
+    
+     #contact .container .left .boxs .social {
+        color: #1b3b56;
+        font-size: 50px;
+       }
+    
+     footer .container {
+      width: 100%;
+      min-height: 90px;
+      display: flex;
+      align-items: center;
+      justify-content: space-evenly;
+      background: linear-gradient(
+    90deg,#1c1c1c 20%,
+          #474350 40%,
+          #ffc857 100%);
+     }
+    
+     .text-pq {
+      position: relative;
+      left: 38%;
+      font-size: 80%;
+     }
+    
+     #back-to-top {
+      position: fixed;
+      bottom: 15px;
+      right: 50px;
+      padding: 5px 10px;
+      border-radius: 50px;
+      background: #64615e;
+      cursor: pointer;
+      animation: jumping 1.5s linear infinite;
+    }
+    }
